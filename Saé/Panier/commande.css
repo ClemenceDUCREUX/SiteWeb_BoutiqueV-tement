@@ -1,0 +1,52 @@
+body {
+    font-family: 'Avenir', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.credit-card-form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.credit-card-form h2 {
+    text-align: center;
+}
+
+.credit-card-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.credit-card-form input,
+.credit-card-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.credit-card-form .card-expiration {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.credit-card-form button {
+    background-color: #00c88c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.credit-card-form button:hover {
+    background-color: #00c88c;
+}

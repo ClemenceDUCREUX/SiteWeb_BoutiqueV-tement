@@ -1,0 +1,148 @@
+
+h6{
+  margin-block-start: 0px;
+  margin-block-end: 1%;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+  font-size: 120%;
+
+}
+
+body {
+    font-family: 'Avenir', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+h1 {
+
+    color: black;
+}
+footer{
+    height: 100% ;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+}
+
+.bouton{
+    height: 7% ;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    opacity: 0.5;
+}
+
+
+
+
+
+header {
+    background-color: #f4f4f4;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.product img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.remove-button {
+    background-color: white;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.checkout-button {
+    background-color: #00c88c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+button { 
+    color: white;
+}
+
+.payment-methods, .delivery-methods {
+    text-align: center;
+}
+
+.payment-methods img, .delivery-methods img {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+}
+
+.logo-container {
+  text-align: left;
+
+  
+}
+
+.logo-container img {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 20px;
+ 
+}
+
+
+.contact { 
+  position: relative;
+ 
+}
+
+.reseau { 
+  position: relative;
+ 
+}
+
+.planS { 
+  color: #000000;
+  position: relative;
+
+}
+
+.membre { 
+  color: #000000;
+  position: relative;
+ 
+}
+
+h3 {
+  color: #000000;
+
+}

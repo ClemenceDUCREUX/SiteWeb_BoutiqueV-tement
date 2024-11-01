@@ -1,0 +1,110 @@
+
+h6{
+
+    margin-block-start: 0px;
+    margin-block-end: 1%;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    font-size: 120%;
+}
+
+body {
+    font-family: 'Avenir', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    height: 100% ;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+}
+
+.contacte{
+    font-family: 'Avenir', sans-serif;
+    position: absolute;
+    left:45%;
+    font-size: 2.0rem;
+
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.question {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-methods, .delivery-methods {
+    text-align: center;
+}
+
+.payment-methods img, .delivery-methods img {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+}
+
+.logo-container {
+  text-align: left;
+
+  
+}
+
+.logo-container img {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 20px;
+ 
+}
+
+
+.contact { 
+  position: relative;
+ 
+}
+
+.reseau { 
+  position: relative;
+ 
+}
+
+.planS { 
+  color: #000000;
+  position: relative;
+
+}
+
+.membre { 
+  color: #000000;
+  position: relative;
+ 
+}
+
+h3 {
+  color: #000000;
+
+}

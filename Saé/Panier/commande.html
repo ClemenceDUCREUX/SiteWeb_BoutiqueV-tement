@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Carte Bancaire</title>
+    <link rel="stylesheet" href="commande.css">
+</head>
+<body>
+
+    <section class="credit-card-form">
+        <h2>Informations de Carte Bancaire</h2>
+        <form action="#" method="post">
+            <label for="card-number">Numéro de Carte :</label>
+            <input type="text" id="card-number" name="card-number" placeholder="**** **** **** ****" maxlength="19" required>
+
+            <label for="card-holder">Titulaire de la Carte :</label>
+            <input type="text" id="card-holder" name="card-holder" placeholder="Nom du titulaire" required>
+
+            <div class="card-expiration">
+                <label for="expiration-month">Date d'expiration:</label>
+                <select id="expiration-month" name="expiration-month" required>
+                    <option value="" disabled selected>Mois</option>
+                    <option value="01">Janvier</option>
+                    <option value="02">Février</option>
+                    <option value="03">Mars</option>
+                    <option value="04">Avril</option>
+                    <option value="05">Mai</option>
+                    <option value="06">Juin</option>
+                    <option value="07">Juillet</option>
+                    <option value="08">Aout</option>
+                    <option value="09">Septembre</option>
+                    <option value="10">Octobre</option>
+                    <option value="11">Novembre</option>
+                    <option value="12">Décembre</option>
+                </select>
+
+                <select id="expiration-year" name="expiration-year" required>
+                    <option value="" disabled selected>Année</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2024">2025</option>
+                    <option value="2024">2026</option>
+                    <option value="2024">2027</option>
+                    <option value="2024">2028</option>
+                    <option value="2024">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+
+            <label for="card-cvc">CVC :</label>
+            <input type="text" id="card-cvc" name="card-cvc" placeholder="123" maxlength="3" required>
+
+            <button type="submit">Payer</button>
+        </form>
+    </section>
+
+</body>
+</html>

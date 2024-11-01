@@ -1,0 +1,110 @@
+h6{
+    margin-block-start: 0px;
+    margin-block-end: 1%;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    font-size: 120%;
+ 
+}  
+footer{
+    height: 100% ;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+        
+
+}
+
+
+body {
+    font-family: 'avenir', sans-serif;
+    margin: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .column {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .cv-link {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .print-button {
+    background-color: #d5d0d0; /* Rouge */
+    color: #fff; /* Texte blanc */
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .print-button:hover {
+    background-color:  #f4f4f4; /* Rouge plus sombre au survol */
+  }
+
+
+  .payment-methods, .delivery-methods {
+    text-align: center;
+}
+
+.payment-methods img, .delivery-methods img {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+}
+
+.logo-container {
+  text-align: left;
+
+  
+}
+
+.logo-container img {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 20px;
+ 
+}
+
+
+.contact { 
+  position: relative;
+ 
+}
+
+.reseau { 
+  position: relative;
+ 
+}
+
+.planS { 
+  color: #000000;
+  position: relative;
+
+}
+
+.membre { 
+  color: #000000;
+  position: relative;
+ 
+}
+
+h3 {
+  color: #000000;
+
+}
+

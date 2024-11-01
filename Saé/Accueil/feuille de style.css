@@ -1,0 +1,251 @@
+header{
+    position: static;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #e5b219;
+    font-weight:bold;
+}
+
+section{
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h6{
+    margin-block-start: 0px;
+    margin-block-end: 1%;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    font-size: 120%;
+ 
+}
+
+aside{
+    color: #e5b219;
+    margin-top: -1%;
+    text-align: center;
+}
+
+footer{
+    height: 100% ;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+        
+
+}
+
+h7{ 
+    font-size: 4rem;
+    margin: auto;
+}
+
+.info{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 9px;
+    padding: 0.2%;
+    margin-left:43.5%;
+    text-align: center;
+}
+
+.fonc{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.theme{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Avenir', sans-serif;
+    
+}
+
+.bouton{
+    height: 7% ;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    opacity: 0.5;
+}
+
+.box div {
+    width: 100px;
+    display: inline-block;
+    padding: 15px;
+    text-align: center;
+    color: #000000;
+    margin: 2%;
+    margin-top: -5%; 
+  }
+
+  pre{
+    font-family: 'Avenir', sans-serif;
+  }
+
+
+
+  .container {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto; 
+  }
+  
+  .card {
+    min-width: 70px;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+  
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  
+    --transition-timing: 0.25s;
+  }
+  .card.active {
+    flex-grow: 100;
+  }
+  
+  .card > .background {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: left;
+    filter: brightness(0.8);
+    z-index: -1;
+    transition: var(--transition-timing) ease;
+  }
+  .card.active > .background {
+    filter: brightness(1) grayscale(0);
+  }
+  
+  .card > .card-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
+    overflow: hidden;
+    transition: var(--transition-timing);
+    z-index: 10;
+  }
+  .card.active > .card-content {
+    inset: 20px;
+    top: auto;
+  }
+  
+  .card-content * {
+    transition: var(--transition-timing);
+  }
+  
+  .card-content > .profile-image {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .card.active .profile-image {
+    border: 1px solid rgb(238, 228, 181);
+  }
+  .profile-image > svg {
+    stroke: #fefefe;
+  }
+  .card.active .profile-image > svg {
+    stroke: rgb(238, 228, 181);
+  }
+  
+  .card-content > .title {
+    white-space: pre;
+    margin-left: 10px;
+    translate: 0 100%;
+    opacity: 0;
+    transition-delay: 0.3s;
+  }
+  .card.active .title {
+    opacity: 1;
+    translate: 0 0;
+  }
+  
+  .card > .backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    z-index: 0;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  }
+
+  .payment-methods, .delivery-methods {
+    text-align: center;
+}
+
+.payment-methods img, .delivery-methods img {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+}
+
+.logo-container {
+  text-align: left;
+
+  
+}
+
+.logo-container img {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 20px;
+ 
+}
+
+
+.contact { 
+  position: relative;
+ 
+}
+
+.reseau { 
+  position: relative;
+ 
+}
+
+.planS { 
+  color: #000000;
+  position: relative;
+
+}
+
+.membre { 
+  color: #000000;
+  position: relative;
+ 
+}
+
+h3 {
+  color: #000000;
+
+}

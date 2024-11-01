@@ -1,0 +1,96 @@
+body{
+    font-family: 'Avenir', sans-serif;
+    }
+    
+    h6{
+    margin-block-start: 0px;
+    margin-block-end: 1%;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    font-size: 120%;
+    }
+    
+    footer{
+        height: 100% ;
+        background-color: #f4f4f4; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px; 
+    }
+    
+    .bouton{
+        height: 7% ;
+        position: fixed;
+        bottom: 1%;
+        right: 1%;
+        opacity: 0.5;
+    }
+    
+    .sold{
+    display: flex;
+    justify-content: center;
+    width: 88%;
+    height: 100%;
+    
+    }
+
+    .theme { 
+
+    width: 100%;
+    height: 100%;
+    }
+
+
+    .payment-methods, .delivery-methods {
+        text-align: center;
+    }
+    
+    .payment-methods img, .delivery-methods img {
+        width: 40px;
+        height: auto;
+        margin: 5px;
+    }
+    
+    .logo-container {
+      text-align: left;
+    
+      
+    }
+    
+    .logo-container img {
+      position: relative;
+      width: 200px;
+      height: auto;
+      left: 20px;
+     
+    }
+    
+    
+    .contact { 
+      position: relative;
+     
+    }
+    
+    .reseau { 
+      position: relative;
+     
+    }
+    
+    .planS { 
+      color: #000000;
+      position: relative;
+    
+    }
+    
+    .membre { 
+      color: #000000;
+      position: relative;
+     
+    }
+    
+    h3 {
+      color: #000000;
+    
+    }

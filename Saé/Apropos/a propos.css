@@ -1,0 +1,130 @@
+body{
+    font-family: 'Avenir', sans-serif;
+}
+
+h6{
+    margin-block-start: 0px;
+    margin-block-end: 1%;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.boxtitre div {
+    width: 500px;
+    display: inline-block;
+    padding: 5px;
+    color: #000000;
+    margin: 2%;
+    margin-top: -5%; 
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.boxtext div {
+ 
+    width: 500px;
+    display: inline-block;
+    padding: 15px;
+    color: #000000;
+    margin: 1%;
+    margin-top: -5%; 
+    background-color: #f4f4f4;
+    border-radius: 20px;
+}
+
+pre{
+    font-family: 'Avenir', sans-serif;
+}
+
+.bouton{
+    height: 7% ;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    opacity: 0.5;
+}
+.titre{
+    text-align:center;
+    font-size: xx-large;
+    background-color: #f4f4f4;
+}
+
+.vision{
+    font-weight: bold;
+    font-size: large;
+}
+
+.données{
+    font-weight: bold;
+    font-size: large;
+}
+
+.stratégies{
+    font-weight: bold;
+    font-size: large;
+}
+
+footer{
+    height: 100% ;
+    background-color: #f4f4f4; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+}
+
+
+.payment-methods, .delivery-methods {
+    text-align: center;
+}
+
+.payment-methods img, .delivery-methods img {
+    width: 40px;
+    height: auto;
+    margin: 5px;
+}
+
+.logo-container {
+  text-align: left;
+
+  
+}
+
+.logo-container img {
+  position: relative;
+  width: 200px;
+  height: auto;
+  left: 20px;
+ 
+}
+
+
+.contact { 
+  position: relative;
+ 
+}
+
+.reseau { 
+  position: relative;
+ 
+}
+
+.planS { 
+  color: #000000;
+  position: relative;
+
+}
+
+.membre { 
+  color: #000000;
+  position: relative;
+ 
+}
+
+h3 {
+  color: #000000;
+
+}
