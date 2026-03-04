@@ -1,59 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire de Carte Bancaire</title>
-    <link rel="stylesheet" href="commande.css">
-</head>
-<body>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paiement — Loue le look</title>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/partials.js" defer></script>
+    <script src="/assets/js/checkout.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar-host"></div>
 
-    <section class="credit-card-form">
-        <h2>Informations de Carte Bancaire</h2>
-        <form action="#" method="post">
-            <label for="card-number">Numéro de Carte :</label>
-            <input type="text" id="card-number" name="card-number" placeholder="**** **** **** ****" maxlength="19" required>
+    <main id="main" class="cart">
+      <div class="container">
+        <div class="shop-head" style="margin-bottom:12px">
+          <div class="stack" style="gap:6px">
+            <h1>Paiement</h1>
+            <p class="sub">Renseigne tes infos et valide (démo).</p>
+          </div>
+          <a class="btn" href="/Sae/Panier/panier.html">← Retour panier</a>
+        </div>
 
-            <label for="card-holder">Titulaire de la Carte :</label>
-            <input type="text" id="card-holder" name="card-holder" placeholder="Nom du titulaire" required>
+        <div class="cart-grid">
+          <section>
+            <form id="checkoutForm" class="card card__pad" style="display:grid; gap:12px;">
+              <p class="filter-title" style="margin:0;">Informations</p>
 
-            <div class="card-expiration">
-                <label for="expiration-month">Date d'expiration:</label>
-                <select id="expiration-month" name="expiration-month" required>
-                    <option value="" disabled selected>Mois</option>
-                    <option value="01">Janvier</option>
-                    <option value="02">Février</option>
-                    <option value="03">Mars</option>
-                    <option value="04">Avril</option>
-                    <option value="05">Mai</option>
-                    <option value="06">Juin</option>
-                    <option value="07">Juillet</option>
-                    <option value="08">Aout</option>
-                    <option value="09">Septembre</option>
-                    <option value="10">Octobre</option>
-                    <option value="11">Novembre</option>
-                    <option value="12">Décembre</option>
-                </select>
+              <div class="field">
+                <label for="name">Nom</label>
+                <input id="name" type="text" required placeholder="Dupont" />
+              </div>
 
-                <select id="expiration-year" name="expiration-year" required>
-                    <option value="" disabled selected>Année</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2024">2025</option>
-                    <option value="2024">2026</option>
-                    <option value="2024">2027</option>
-                    <option value="2024">2028</option>
-                    <option value="2024">2029</option>
-                    <option value="2030">2030</option>
-                </select>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" required placeholder="toi@mail.com" />
+              </div>
+
+              <div class="field">
+                <label for="address">Adresse</label>
+                <input id="address" type="text" required placeholder="12 rue …" />
+              </div>
+
+              <div class="field">
+                <label for="card">Carte</label>
+                <input id="card" type="text" inputmode="numeric" minlength="16" maxlength="19" required placeholder="1234 5678 9012 3456" />
+              </div>
+
+              <button class="btn btn--primary" type="submit">Payer</button>
+              <p class="small" style="margin:0;">Démo : aucune donnée n’est envoyée.</p>
+            </form>
+          </section>
+
+          <aside class="cart-summary">
+            <div class="card card__pad">
+              <p class="filter-title" style="margin:0 0 10px 0;">Récap commande</p>
+              <div id="orderSummary"></div>
+              <div style="height:1px; background:var(--line); margin:12px 0;"></div>
+              <div class="summary-row" style="font-size:14px;">
+                <span>Total</span><strong id="orderTotal">0 €</strong>
+              </div>
             </div>
+          </aside>
+        </div>
+      </div>
+    </main>
 
-            <label for="card-cvc">CVC :</label>
-            <input type="text" id="card-cvc" name="card-cvc" placeholder="123" maxlength="3" required>
-
-            <button type="submit">Payer</button>
-        </form>
-    </section>
-
-</body>
+    <div id="footer-host"></div>
+  </body>
 </html>

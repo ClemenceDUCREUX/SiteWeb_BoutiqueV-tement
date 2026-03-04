@@ -1,130 +1,143 @@
-body{
-    font-family: 'Avenir', sans-serif;
+/* Page À propos — styles spécifiques
+   Dépend de /assets/css/site.css pour les boutons (.btn, etc.)
+*/
+
+.about {
+  padding-bottom: 40px;
 }
 
-h6{
-    margin-block-start: 0px;
-    margin-block-end: 1%;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.about-hero {
+  background: linear-gradient(180deg, rgba(245, 245, 245, 1), rgba(255, 255, 255, 1));
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.about-hero__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 16px 28px;
+  text-align: center;
+}
+
+.about-hero h1 {
+  margin: 0;
+  font-size: clamp(26px, 3.2vw, 42px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.about-hero .brand {
+  white-space: nowrap;
+}
+
+.about-hero p {
+  margin: 14px auto 0;
+  max-width: 760px;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-hero__cta {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Contenu */
+.about-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 26px 16px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.about-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 18px 18px 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.about-card h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.about-card h2 span {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+
+.about-card p {
+  margin: 10px 0 0;
+  line-height: 1.65;
+  color: rgba(0, 0, 0, 0.78);
+  font-size: 14.5px;
+}
+
+/* Bloc promesse */
+.about-highlight {
+  margin-top: 18px;
+  background: #f4f4f4;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about-highlight__content h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.about-highlight__content ul {
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.6;
+  font-size: 14.5px;
+}
+
+.about-highlight__btn {
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 980px) {
+  .about-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero__inner {
+    padding-top: 34px;
+  }
+
+  .about-highlight {
+    align-items: stretch;
+  }
+
+  .about-highlight__btn {
+    width: 100%;
     text-align: center;
-    font-size: 120%;
-}
-
-.boxtitre div {
-    width: 500px;
-    display: inline-block;
-    padding: 5px;
-    color: #000000;
-    margin: 2%;
-    margin-top: -5%; 
-    background-color: #f4f4f4;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.boxtext div {
- 
-    width: 500px;
-    display: inline-block;
-    padding: 15px;
-    color: #000000;
-    margin: 1%;
-    margin-top: -5%; 
-    background-color: #f4f4f4;
-    border-radius: 20px;
-}
-
-pre{
-    font-family: 'Avenir', sans-serif;
-}
-
-.bouton{
-    height: 7% ;
-    position: fixed;
-    bottom: 1%;
-    right: 1%;
-    opacity: 0.5;
-}
-.titre{
-    text-align:center;
-    font-size: xx-large;
-    background-color: #f4f4f4;
-}
-
-.vision{
-    font-weight: bold;
-    font-size: large;
-}
-
-.données{
-    font-weight: bold;
-    font-size: large;
-}
-
-.stratégies{
-    font-weight: bold;
-    font-size: large;
-}
-
-footer{
-    height: 100% ;
-    background-color: #f4f4f4; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px; 
-}
-
-
-.payment-methods, .delivery-methods {
-    text-align: center;
-}
-
-.payment-methods img, .delivery-methods img {
-    width: 40px;
-    height: auto;
-    margin: 5px;
-}
-
-.logo-container {
-  text-align: left;
-
-  
-}
-
-.logo-container img {
-  position: relative;
-  width: 200px;
-  height: auto;
-  left: 20px;
- 
-}
-
-
-.contact { 
-  position: relative;
- 
-}
-
-.reseau { 
-  position: relative;
- 
-}
-
-.planS { 
-  color: #000000;
-  position: relative;
-
-}
-
-.membre { 
-  color: #000000;
-  position: relative;
- 
-}
-
-h3 {
-  color: #000000;
-
+  }
 }

@@ -1,0 +1,226 @@
+/* Global responsive baseline for Loue le look
+   Goal: keep the desktop look close to the original, but make it usable on tablet/mobile.
+*/
+
+:root{
+  --maxw: 1100px;
+  --pad: 16px;
+  --border: 1px solid rgba(0,0,0,.12);
+}
+
+*{ box-sizing: border-box; }
+
+html, body{ height: 100%; }
+
+body{
+  margin: 0;
+  font-family: 'Avenir', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.4;
+}
+
+/* Make images behave on small screens */
+img{ max-width: 100%; height: auto; }
+
+/* Top navigation (many pages use <h6> as nav) */
+h6{
+  margin: 0;
+  padding: 12px var(--pad);
+  border-bottom: var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+h6 a{
+  text-decoration: none;
+  color: #111;
+  white-space: nowrap;
+}
+
+h6 a:hover{ text-decoration: underline; }
+
+/* Any logo/icons placed inside the nav */
+h6 img{
+  width: auto !important;
+  height: 32px !important;
+  max-height: 32px !important;
+}
+
+/* Site title (many pages used padding-left hacks) */
+h1{
+  padding-left: 0 !important;
+  margin: 18px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+a{ color: inherit; }
+
+/* Constrain main content without breaking existing layouts */
+main, .page, .container, section{
+  max-width: var(--maxw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main, .page{
+  padding: 0 var(--pad);
+}
+
+/* HOME PAGE: slider */
+.slider-container{
+  width: 100%;
+  max-width: var(--maxw);
+  padding: 0 var(--pad);
+}
+
+.prev-btn, .next-btn{
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.85);
+  border: var(--border);
+}
+
+/* HOME PAGE: category circles/grid */
+.image-container{
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 18px;
+  align-items: start;
+  padding: 0 var(--pad) !important;
+  height: auto !important;
+}
+
+.image{
+  width: 100% !important;
+  height: auto !important;
+  text-align: center;
+}
+
+.image img{
+  width: min(200px, 70vw) !important;
+  height: auto !important;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+.image h3{
+  position: static !important;
+  transform: none !important;
+  margin: 10px 0 0;
+}
+
+/* Product grids (Femme/Homme/Enfant/etc.) */
+.boutique{
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center !important;
+  padding: 0 var(--pad);
+}
+
+.boutique .article{
+  width: auto !important;
+  flex: 1 1 220px;
+  max-width: 260px;
+  margin: 0 !important;
+  padding: 10px !important;
+  border-radius: 14px;
+  border: var(--border);
+  background: #fff;
+}
+
+.boutique .article img{
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Cart */
+.product{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  margin: 12px var(--pad);
+  border: var(--border);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.product img{
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex: 0 0 auto;
+}
+
+.product-info{
+  flex: 1 1 auto;
+  min-width: 160px;
+}
+
+.remove-button{
+  border: var(--border);
+  background: #fff;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.remove-button:hover{
+  background: rgba(0,0,0,.04);
+}
+
+/* Payment form */
+.credit-card-form{
+  max-width: 520px;
+  margin: 24px auto;
+  padding: 18px;
+  border: var(--border);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.credit-card-form input,
+.credit-card-form select,
+.credit-card-form textarea{
+  width: 100%;
+}
+
+/* Footer (many pages share same footer structure) */
+.footer{
+  margin-top: 30px;
+  padding: 20px var(--pad) !important;
+}
+
+.footer-links{
+  gap: 14px;
+}
+
+.social-icons img{
+  width: 28px !important;
+  height: 28px !important;
+}
+
+/* Small screens */
+@media (max-width: 768px){
+  h6{ gap: 10px; font-size: 13px; }
+  h6 img{ height: 28px !important; max-height: 28px !important; }
+  .product{ flex-wrap: wrap; }
+  .remove-button{ width: 100%; }
+}
+
+/* Very small screens */
+@media (max-width: 420px){
+  h6{ gap: 8px; font-size: 12px; padding: 10px 12px; }
+}

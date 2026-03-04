@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique — Loue le look</title>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/avenir" />
+    <link rel="stylesheet" href="/assets/css/site.css" />
+    <script src="/assets/js/partials.js" defer></script>
+    <script src="/assets/js/shop.js" defer></script>
+  </head>
+  <body>
+    <div id="navbar-host"></div>
+
+    <main id="main" class="shop">
+      <div class="container">
+        <div class="shop-head">
+          <div class="stack" style="gap:6px">
+            <h1>La boutique</h1>
+            <p class="sub">Choisis un style, filtre, et ajoute au panier en 2 clics.</p>
+          </div>
+
+          <button class="btn filters-toggle" id="openFilters" type="button" aria-expanded="false">
+            Filtres
+          </button>
+        </div>
+
+        <div class="shop-layout">
+          <aside class="filters" id="filtersPanel">
+            <div class="card filter-card">
+              <p class="filter-title">Filtres</p>
+
+              <div class="field">
+                <label for="q">Recherche</label>
+                <input id="q" type="search" placeholder="Ex: noir, robe, look..." autocomplete="off" />
+              </div>
+
+              <div class="field">
+                <label>Catégorie</label>
+                <div class="chips">
+                  <button class="chip is-on" type="button" data-cat="all">Tout</button>
+                  <button class="chip" type="button" data-cat="femme">Femme</button>
+                  <button class="chip" type="button" data-cat="homme">Homme</button>
+                  <button class="chip" type="button" data-cat="couple">Duo</button>
+                  <button class="chip" type="button" data-cat="famille">Famille</button>
+                  <button class="chip" type="button" data-cat="enfant">Enfant</button>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="size">Taille</label>
+                <select id="size">
+                  <option value="all">Toutes</option>
+                  <option>XS</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                  <option>3-4</option>
+                  <option>5-6</option>
+                  <option>7-8</option>
+                  <option>9-10</option>
+                  <option>11-12</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="maxPrice">Prix max / jour: <span id="maxPriceLabel"></span></label>
+                <input id="maxPrice" type="range" min="10" max="50" step="1" value="50" />
+              </div>
+
+              <div class="field">
+                <label for="sort">Trier</label>
+                <select id="sort">
+                  <option value="popular">Populaire</option>
+                  <option value="priceAsc">Prix croissant</option>
+                  <option value="priceDesc">Prix décroissant</option>
+                  <option value="title">Nom (A→Z)</option>
+                </select>
+              </div>
+
+              <button class="btn" id="clearFilters" type="button">Réinitialiser</button>
+            </div>
+          </aside>
+
+          <section aria-label="Produits">
+            <div class="shop-head" style="margin-bottom:10px">
+              <div class="badge" id="product-count">0 article(s)</div>
+            </div>
+            <div class="products" id="products"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-host"></div>
+  </body>
+</html>

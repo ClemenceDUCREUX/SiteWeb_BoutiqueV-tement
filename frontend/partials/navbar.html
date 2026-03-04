@@ -1,0 +1,64 @@
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="site-header" data-navbar>
+  <div class="container">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="brand" href="/Sae/Accueil/accueil.html" aria-label="Accueil Loue le look">
+        <span class="brand__logo" aria-hidden="true">
+          <img src="/assets/img/img/logo.png" alt="" />
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Loue le look</span>
+          <span class="brand__tag">Location de tenues</span>
+        </span>
+      </a>
+
+      <!-- Liens desktop (seront cachés sur mobile via CSS) -->
+      <div class="navlinks" role="list">
+        <a data-nav="accueil" href="/Sae/Accueil/accueil.html">Accueil</a>
+        <a data-nav="boutique" href="/Sae/Boutique/boutique.html">Boutique</a>
+        <a data-nav="solde" href="/Sae/Solde/solde.html">Soldes</a>
+        <a data-nav="apropos" href="/Sae/Apropos/A_propos.html">À propos</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="icon-btn" data-nav="compte" href="/Sae/Compte/compte.html" aria-label="Compte">
+          <span>Compte</span>
+        </a>
+
+        <a class="icon-btn" data-nav="panier" href="/Sae/Panier/panier.html" aria-label="Panier">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span>Panier</span>
+        </a>
+
+        <!-- Bouton burger (mobile) -->
+        <button
+          class="icon-btn nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Ouvrir le menu"
+          data-nav-toggle
+        >
+          <span class="icon" aria-hidden="true">☰</span>
+          <span class="label">Menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Drawer mobile -->
+    <div class="mobile-drawer" id="mobile-drawer" hidden data-mobile-drawer>
+      <div class="drawer" role="list">
+        <a data-nav="accueil" href="/Sae/Accueil/accueil.html">Accueil</span></a>
+        <a data-nav="boutique" href="/Sae/Boutique/boutique.html">Boutique</span></a>
+        <a data-nav="solde" href="/Sae/Solde/solde.html">Soldes</a>
+        <a data-nav="apropos" href="/Sae/Apropos/A_propos.html">À propos</a>
+        <a data-nav="compte" href="/Sae/Compte/compte.html">Compte</a>
+        <a data-nav="panier" href="/Sae/Panier/panier.html">Panier</a>
+      </div>
+    </div>
+
+    <!-- Backdrop (pour fermer en cliquant en dehors) -->
+    <div class="nav-backdrop" hidden data-nav-backdrop></div>
+  </div>
+</header>
